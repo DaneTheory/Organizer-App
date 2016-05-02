@@ -10,7 +10,7 @@ import { getSalesSuccess, deleteSaleSuccess } from '../Actions/Sales';
   GET AVAILABLE SALES LIST FROM SERVER
 ========================================== */
 export function getSales() {
-  return axios.get('http://localhost:3001/sales/')
+  return axios.get('https://orgapp-json-api.herokuapp.com/sales/')
     .then(response => {
       store.dispatch(getSalesSuccess(response.data));
       return response;
@@ -23,7 +23,7 @@ export function getSales() {
 export function addSale(sale) {
   return axios({
     method: 'post',
-    url: 'http://localhost:3001/sales/',
+    url: 'https://orgapp-json-api.herokuapp.com/sales/',
     data: {
       sale: sale,
       isActive: true
@@ -39,7 +39,7 @@ export function addSale(sale) {
   DELETE SELECTED SALES FROM SERVER THEN UPDATE COMPONENT
 ============================================================ */
 export function deleteSale(saleId) {
-  return axios.delete('http://localhost:3001/sales/' + saleId)
+  return axios.delete('https://orgapp-json-api.herokuapp.com/sales/' + saleId)
     .then(response => {
       store.dispatch(deleteSaleSuccess(saleId));
       return response;

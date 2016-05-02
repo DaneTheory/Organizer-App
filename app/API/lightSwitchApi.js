@@ -10,7 +10,7 @@ import { toggleLightsSuccess } from '../Actions/LightSwitch';
   DISPATCH GET LIGHT STATE TO ACTION
 ========================================== */
 export function getLightState() {
-  return axios.get('http://localhost:3001/activeState/')
+  return axios.get('https://orgapp-json-api.herokuapp.com/activeState/')
     .then(response => {
       store.dispatch(toggleLightsSuccess(response.data));
       return response;
@@ -23,7 +23,7 @@ export function getLightState() {
 export function toggleState(activeQuery) {
   return axios({
     method: 'post',
-    url: 'http://localhost:3001/activeState/',
+    url: 'https://orgapp-json-api.herokuapp.com/activeState/',
     data: {
       isActive: activeQuery
     }},

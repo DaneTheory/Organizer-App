@@ -1,12 +1,12 @@
 /* =========================================================
                   NOTES COMPONENT LAYOUT
 ============================================================ */
-import React from 'react';
-import { connect } from 'react-redux';
-import NotesList from '../views/NotesList';
-import * as NoteAPI from '../../API/notesApi';
-import store from '../../store';
-import NotesForm from '../views/NotesForm';
+import React  from 'react'
+import { connect } from 'react-redux'
+import * as NoteAPI  from '../../API/notesApi'
+import store  from '../../store'
+import NotesForm  from '../views/NotesForm'
+import NotesList  from '../views/NotesList'
 
 const NotesLayout = React.createClass({
   componentDidMount: function() {

@@ -1,13 +1,13 @@
 /* =========================================================
               QUOTES LIST CONTAINER COMPONENT
 ============================================================ */
-import React from 'react';
-import { connect } from 'react-redux';
-import QuoteList from '../views/QuotesList';
-import * as QuoteAPI from '../../API/quotesApi';
-import store from '../../store';
-import { loadSearchLayout } from '../../Actions/SearchLayout';
-import QuotesForm from '../views/QuotesForm';
+import React  from 'react'
+import { connect } from 'react-redux'
+import * as QuoteAPI  from '../../API/quotesApi'
+import { loadSearchLayout } from '../../Actions/SearchLayout'
+import store  from '../../store'
+import QuotesForm  from '../views/QuotesForm'
+import QuoteList  from '../views/QuotesList'
 
 
 const QuotesListContainer = React.createClass({

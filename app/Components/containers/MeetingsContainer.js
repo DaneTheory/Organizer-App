@@ -1,13 +1,13 @@
 /* =========================================================
           MEETINGS LIST CONTAINER COMPONENT
 ============================================================ */
-import React from 'react';
-import { connect } from 'react-redux';
-import MeetingList from '../views/MeetingsList';
-import * as MeetingAPI from '../../API/meetingsApi';
-import store from '../../store';
-import { loadSearchLayout } from '../../Actions/SearchLayout';
-import MeetingsForm from '../views/MeetingsForm';
+import React  from 'react'
+import { connect } from 'react-redux'
+import * as MeetingAPI  from '../../API/meetingsApi'
+import { loadSearchLayout } from '../../Actions/SearchLayout'
+import store  from '../../store'
+import MeetingsForm  from '../views/MeetingsForm'
+import MeetingList  from '../views/MeetingsList'
 
 
 const MeetingsListContainer = React.createClass({

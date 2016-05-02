@@ -1,7 +1,7 @@
 /* =========================================================
             MEETINGS LIST "ADD MORE" BUTTON VIEW
 ============================================================ */
-import React from 'react';
+import React  from 'react'
 
 
 // STATELESS FUNCTIONAL COMPONENT WITHOUT TYPICAL INHERITANCE

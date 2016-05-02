@@ -1,11 +1,11 @@
 /* =========================================================
           LIGHT SWITCH CONTAINER COMPONENT
 ============================================================ */
-import React from 'react';
-import { connect } from 'react-redux';
-import LightsButton from '../views/LightsButton';
-import * as LightSwitchAPI from '../../API/lightSwitchApi';
-import store from '../../store';
+import React  from 'react'
+import { connect } from 'react-redux'
+import * as LightSwitchAPI  from '../../API/lightSwitchApi'
+import store  from '../../store'
+import LightsButton  from '../views/LightsButton'
 
 
 const LightSwitchContainer = React.createClass({

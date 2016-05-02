@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "ef1d6e93521e22db6fae"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e558909635ee4a76b44a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -24246,7 +24246,7 @@
 	
 	'use strict';
 	
-	module.exports = '0.14.8';
+	module.exports = '0.14.7';
 
 /***/ },
 /* 69 */
@@ -26636,19 +26636,32 @@
 	
 	    var basename = options.basename;
 	
-	    // Automatically use the value of <base href> in HTML
-	    // documents as basename if it's not explicitly given.
-	    if (basename == null && _ExecutionEnvironment.canUseDOM) {
-	      var base = document.getElementsByTagName('base')[0];
+	    var checkedBaseHref = false;
 	
-	      if (base) {
-	        process.env.NODE_ENV !== 'production' ? _warning2['default'](false, 'Automatically setting basename using <base href> is deprecated and will ' + 'be removed in the next major release. The semantics of <base href> are ' + 'subtly different from basename. Please pass the basename explicitly in ' + 'the options to createHistory') : undefined;
-	
-	        basename = base.getAttribute('href');
+	    function checkBaseHref() {
+	      if (checkedBaseHref) {
+	        return;
 	      }
+	
+	      // Automatically use the value of <base href> in HTML
+	      // documents as basename if it's not explicitly given.
+	      if (basename == null && _ExecutionEnvironment.canUseDOM) {
+	        var base = document.getElementsByTagName('base')[0];
+	        var baseHref = base && base.getAttribute('href');
+	
+	        if (baseHref != null) {
+	          basename = baseHref;
+	
+	          process.env.NODE_ENV !== 'production' ? _warning2['default'](false, 'Automatically setting basename using <base href> is deprecated and will ' + 'be removed in the next major release. The semantics of <base href> are ' + 'subtly different from basename. Please pass the basename explicitly in ' + 'the options to createHistory') : undefined;
+	        }
+	      }
+	
+	      checkedBaseHref = true;
 	    }
 	
 	    function addBasename(location) {
+	      checkBaseHref();
+	
 	      if (basename && location.basename == null) {
 	        if (location.pathname.indexOf(basename) === 0) {
 	          location.pathname = location.pathname.substring(basename.length);
@@ -26664,6 +26677,8 @@
 	    }
 	
 	    function prependBasename(location) {
+	      checkBaseHref();
+	
 	      if (!basename) return location;
 	
 	      if (typeof location === 'string') location = _PathUtils.parsePath(location);
@@ -30000,10 +30015,6 @@
 	  }
 	};
 	
-	function registerNullComponentID() {
-	  ReactEmptyComponentRegistry.registerNullComponentID(this._rootNodeID);
-	}
-	
 	var ReactEmptyComponent = function (instantiate) {
 	  this._currentElement = null;
 	  this._rootNodeID = null;
@@ -30012,7 +30023,7 @@
 	assign(ReactEmptyComponent.prototype, {
 	  construct: function (element) {},
 	  mountComponent: function (rootID, transaction, context) {
-	    transaction.getReactMountReady().enqueue(registerNullComponentID, this);
+	    ReactEmptyComponentRegistry.registerNullComponentID(rootID);
 	    this._rootNodeID = rootID;
 	    return ReactReconciler.mountComponent(this._renderedComponent, rootID, transaction, context);
 	  },
@@ -32542,10 +32553,6 @@
 	
 	var _reactRedux = __webpack_require__(22);
 	
-	var _LightsButton = __webpack_require__(155);
-	
-	var _LightsButton2 = _interopRequireDefault(_LightsButton);
-	
 	var _lightSwitchApi = __webpack_require__(152);
 	
 	var LightSwitchAPI = _interopRequireWildcard(_lightSwitchApi);
@@ -32553,6 +32560,10 @@
 	var _store = __webpack_require__(82);
 	
 	var _store2 = _interopRequireDefault(_store);
+	
+	var _LightsButton = __webpack_require__(155);
+	
+	var _LightsButton2 = _interopRequireDefault(_LightsButton);
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
@@ -32671,17 +32682,17 @@
 	  value: true
 	});
 	
-	var _ActionTypes = __webpack_require__(25);
-	
-	var types = _interopRequireWildcard(_ActionTypes);
-	
 	var _lodash = __webpack_require__(17);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	var _ActionTypes = __webpack_require__(25);
+	
+	var types = _interopRequireWildcard(_ActionTypes);
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	/* =========================================================
 	                    LIGHTS REDUCER
@@ -33549,10 +33560,6 @@
 	
 	var _reactRedux = __webpack_require__(22);
 	
-	var _LightsButton = __webpack_require__(182);
-	
-	var _LightsButton2 = _interopRequireDefault(_LightsButton);
-	
 	var _lightSwitchApi = __webpack_require__(164);
 	
 	var LightSwitchAPI = _interopRequireWildcard(_lightSwitchApi);
@@ -33560,6 +33567,10 @@
 	var _store = __webpack_require__(13);
 	
 	var _store2 = _interopRequireDefault(_store);
+	
+	var _LightsButton = __webpack_require__(182);
+	
+	var _LightsButton2 = _interopRequireDefault(_LightsButton);
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
@@ -33610,23 +33621,23 @@
 	
 	var _reactRedux = __webpack_require__(22);
 	
-	var _MeetingsList = __webpack_require__(184);
-	
-	var _MeetingsList2 = _interopRequireDefault(_MeetingsList);
-	
 	var _meetingsApi = __webpack_require__(165);
 	
 	var MeetingAPI = _interopRequireWildcard(_meetingsApi);
+	
+	var _SearchLayout = __webpack_require__(53);
 	
 	var _store = __webpack_require__(13);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
-	var _SearchLayout = __webpack_require__(53);
-	
 	var _MeetingsForm = __webpack_require__(183);
 	
 	var _MeetingsForm2 = _interopRequireDefault(_MeetingsForm);
+	
+	var _MeetingsList = __webpack_require__(184);
+	
+	var _MeetingsList2 = _interopRequireDefault(_MeetingsList);
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
@@ -33678,23 +33689,23 @@
 	
 	var _reactRedux = __webpack_require__(22);
 	
-	var _QuotesList = __webpack_require__(188);
-	
-	var _QuotesList2 = _interopRequireDefault(_QuotesList);
-	
 	var _quotesApi = __webpack_require__(167);
 	
 	var QuoteAPI = _interopRequireWildcard(_quotesApi);
+	
+	var _SearchLayout = __webpack_require__(53);
 	
 	var _store = __webpack_require__(13);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
-	var _SearchLayout = __webpack_require__(53);
-	
 	var _QuotesForm = __webpack_require__(187);
 	
 	var _QuotesForm2 = _interopRequireDefault(_QuotesForm);
+	
+	var _QuotesList = __webpack_require__(188);
+	
+	var _QuotesList2 = _interopRequireDefault(_QuotesList);
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
@@ -33745,23 +33756,23 @@
 	
 	var _reactRedux = __webpack_require__(22);
 	
-	var _SalesList = __webpack_require__(190);
-	
-	var _SalesList2 = _interopRequireDefault(_SalesList);
-	
 	var _salesAPI = __webpack_require__(168);
 	
 	var SaleAPI = _interopRequireWildcard(_salesAPI);
+	
+	var _SearchLayout = __webpack_require__(53);
 	
 	var _store = __webpack_require__(13);
 	
 	var _store2 = _interopRequireDefault(_store);
 	
-	var _SearchLayout = __webpack_require__(53);
-	
 	var _SalesForm = __webpack_require__(189);
 	
 	var _SalesForm2 = _interopRequireDefault(_SalesForm);
+	
+	var _SalesList = __webpack_require__(190);
+	
+	var _SalesList2 = _interopRequireDefault(_SalesList);
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
@@ -33925,13 +33936,13 @@
 	
 	var _Home2 = _interopRequireDefault(_Home);
 	
-	var _NotesLayout = __webpack_require__(180);
-	
-	var _NotesLayout2 = _interopRequireDefault(_NotesLayout);
-	
 	var _LightsContainer = __webpack_require__(174);
 	
 	var _LightsContainer2 = _interopRequireDefault(_LightsContainer);
+	
+	var _NotesLayout = __webpack_require__(180);
+	
+	var _NotesLayout2 = _interopRequireDefault(_NotesLayout);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33951,10 +33962,6 @@
 	
 	var _reactRedux = __webpack_require__(22);
 	
-	var _NotesList = __webpack_require__(186);
-	
-	var _NotesList2 = _interopRequireDefault(_NotesList);
-	
 	var _notesApi = __webpack_require__(166);
 	
 	var NoteAPI = _interopRequireWildcard(_notesApi);
@@ -33966,6 +33973,10 @@
 	var _NotesForm = __webpack_require__(185);
 	
 	var _NotesForm2 = _interopRequireDefault(_NotesForm);
+	
+	var _NotesList = __webpack_require__(186);
+	
+	var _NotesList2 = _interopRequireDefault(_NotesList);
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
@@ -34608,13 +34619,13 @@
 	
 	var _reactRedux = __webpack_require__(22);
 	
-	var _store = __webpack_require__(13);
-	
-	var _store2 = _interopRequireDefault(_store);
-	
 	var _Router = __webpack_require__(192);
 	
 	var _Router2 = _interopRequireDefault(_Router);
+	
+	var _store = __webpack_require__(13);
+	
+	var _store2 = _interopRequireDefault(_store);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -34642,17 +34653,17 @@
 	  value: true
 	});
 	
-	var _ActionTypes = __webpack_require__(11);
-	
-	var types = _interopRequireWildcard(_ActionTypes);
-	
 	var _lodash = __webpack_require__(17);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	var _ActionTypes = __webpack_require__(11);
+	
+	var types = _interopRequireWildcard(_ActionTypes);
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	/* =========================================================
 	                    LIGHTS REDUCER

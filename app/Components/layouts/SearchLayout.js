@@ -1,7 +1,7 @@
 /* =========================================================
             LISTS LAYOUT WITH DISPLAY INFO
 ============================================================ */
-import React from 'react';
+import React  from 'react'
 
 // STATELESS FUNCTIONAL COMPONENTS
 export default function(props) {

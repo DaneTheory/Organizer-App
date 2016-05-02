@@ -1,7 +1,7 @@
 /* =========================================================
                     HOME PAGE VIEW
 ============================================================ */
-import React from 'react';
+import React  from 'react'
 
 const Home = React.createClass({
   render: function() {

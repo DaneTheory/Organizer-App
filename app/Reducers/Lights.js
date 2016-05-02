@@ -1,8 +1,8 @@
 /* =========================================================
                     LIGHTS REDUCER
 ============================================================ */
-import * as types from '../Constants/ActionTypes';
-import _ from 'lodash';
+import _  from 'lodash'
+import * as types  from '../Constants/ActionTypes'
 
 
 const initialState = {

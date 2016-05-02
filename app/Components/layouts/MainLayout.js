@@ -3,9 +3,9 @@
 ============================================================ */
 import React  from 'react'
 import { Link } from 'react-router'
-import Home from '../Home'
-import NotesLayout from '../layouts/NotesLayout'
-import LightSwitchContainer from '../containers/LightsContainer'
+import Home  from '../Home'
+import LightSwitchContainer  from '../containers/LightsContainer'
+import NotesLayout  from '../layouts/NotesLayout'
 
 
 // STATELESS FUNCTIONAL COMPONENTS

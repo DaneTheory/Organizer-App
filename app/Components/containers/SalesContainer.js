@@ -1,13 +1,13 @@
 /* =========================================================
           SALES LIST CONTAINER COMPONENT
 ============================================================ */
-import React from 'react';
-import { connect } from 'react-redux';
-import SaleList from '../views/SalesList';
-import * as SaleAPI from '../../API/salesAPI';
-import store from '../../store';
-import { loadSearchLayout } from '../../Actions/SearchLayout';
-import SalesForm from '../views/SalesForm';
+import React  from 'react'
+import { connect } from 'react-redux'
+import * as SaleAPI  from '../../API/salesAPI'
+import { loadSearchLayout } from '../../Actions/SearchLayout'
+import store  from '../../store'
+import SalesForm  from '../views/SalesForm'
+import SaleList  from '../views/SalesList'
 
 
 const SalesListContainer = React.createClass({

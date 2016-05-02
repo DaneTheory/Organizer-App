@@ -1,8 +1,8 @@
 /* =========================================================
                 LIGHT SWITCH BUTTON VIEW
 ============================================================ */
-import React from 'react';
-import LightBulbIcon from './icons/lightBulbIcon'
+import React  from 'react'
+import LightBulbIcon  from './icons/lightBulbIcon'
 
 
 // STATELESS FUNCTIONAL COMPONENTS

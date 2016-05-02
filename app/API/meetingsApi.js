@@ -10,7 +10,7 @@ import { getMeetingsSuccess, deleteMeetingSuccess } from '../Actions/Meetings';
   GET AVAILABLE MEETINGS LIST FROM SERVER
 ========================================== */
 export function getMeetings() {
-  return axios.get('http://localhost:3001/meetings/')
+  return axios.get('https://orgapp-json-api.herokuapp.com/meetings/')
     .then(response => {
       store.dispatch(getMeetingsSuccess(response.data));
       return response;
@@ -23,7 +23,7 @@ export function getMeetings() {
 export function addMeeting(meeting) {
   return axios({
     method: 'post',
-    url: 'http://localhost:3001/meetings/',
+    url: 'https://orgapp-json-api.herokuapp.com/meetings/',
     data: {
       meeting: meeting,
       isActive: true
@@ -39,7 +39,7 @@ export function addMeeting(meeting) {
   DELETE SELECTED MEETING FROM SERVER THEN UPDATE COMPONENT
 ============================================================ */
 export function deleteMeeting(meetingId) {
-  return axios.delete('http://localhost:3001/meetings/' + meetingId)
+  return axios.delete('https://orgapp-json-api.herokuapp.com/meetings/' + meetingId)
     .then(response => {
       store.dispatch(deleteMeetingSuccess(meetingId));
       return response;

@@ -1,0 +1,288 @@
+{
+  "activeState": {
+    "isActive": true
+  },
+  "meetings": [
+    {
+      "id": 1,
+      "meeting": "9:00AM - 9:30AM",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "meeting": "10:30AM - 11:30AM",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "meeting": "11:45AM - 12:30PM",
+      "isActive": true
+    },
+    {
+      "id": 4,
+      "meeting": "1:00PM - 2:15PM",
+      "isActive": true
+    },
+    {
+      "id": 5,
+      "meeting": "3:00PM - 4:00PM",
+      "isActive": true
+    }
+  ],
+  "quotes": [
+    {
+      "id": 1,
+      "quote": "Company A: 100",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "quote": "Company B: 200",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "quote": "Company C: 300",
+      "isActive": true
+    },
+    {
+      "id": 4,
+      "quote": "Company D: 400",
+      "isActive": true
+    },
+    {
+      "id": 5,
+      "quote": "Company D: 500",
+      "isActive": true
+    }
+  ],
+  "sales": [
+    {
+      "id": 1,
+      "sale": "January: 100",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "sale": "February: 200",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "sale": "March: 300",
+      "isActive": true
+    },
+    {
+      "id": 4,
+      "sale": "April: 400",
+      "isActive": true
+    },
+    {
+      "id": 5,
+      "sale": "May: 500",
+      "isActive": true
+    }
+  ],
+  "notes": [
+    {
+      "id": 1,
+      "note": "Lorem ipsum dolor sit amet, nonumy eruditi vituperatoribus mei id, vix facer blandit noluisse ad. Vel ei dicam option menandri. In sit tale affert explicari, quo et latine docendi. Has te habemus rationibus, id cum dicant dicunt oportere, et ius prodesset reprehendunt. Qui ut homero efficiantur, eu omnis solum fabellas sed, sit habeo legimus ea. Inermis intellegam eam te.",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "note": "Adhuc velit platonem eam cu. Cu alia aeque usu, qui ad tale graeco dissentiet, no ius unum deserunt nominati. Usu prima dictas percipit an. Diceret sapientem intellegam at ius, legere omittantur ea sed. Sit natum mucius vocibus ut, in voluptua pertinax nam.",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "note": "Eum ei ullum utinam. Vix dolor habemus laboramus id, liber ornatus nec te. Congue laoreet vis ad, vix augue alienum lobortis ex. Nec no oratio vocent similique, ex eos quaestio instructior definitionem, usu ex graecis civibus periculis. Cu vide minim referrentur sed, dico dicunt ei qui, et dolor oblique dolores vis. Quot ferri impetus eu sea, vim ea equidem ornatus.",
+      "isActive": true
+    },
+    {
+      "id": 4,
+      "note": "Iriure accusam eum et, iisque explicari an has, ius labores inciderint ne. Ad eligendi maiestatis sed. Eos alia voluptatum id, ex omnium iracundia efficiantur his, nonumy sententiae sed no. Nec in utroque qualisque voluptatibus, tota quodsi usu cu. Pertinax pertinacia eum no, nemore audire persecuti has cu. Dicta semper deleniti id pro. Quo ut vidit inciderint, quas noster detracto cum eu.",
+      "isActive": true
+    },
+    {
+      "id": 5,
+      "note": "Vim ne dolore conclusionemque. His eros quidam sapientem ex, eam munere suscipit vituperata et. Primis maluisset in sea, mei id nulla tempor hendrerit. Paulo dicant nostro pri ut, fugit conceptam signiferumque usu at. Tollit definitiones in vix, illud labitur quo ad. Ad qui prompta virtute delenit, ne reque dicant eam.",
+      "isActive": true
+    },
+    {
+      "id": 6,
+      "note": "Lorem ipsum dolor sit amet, nonumy eruditi vituperatoribus mei id, vix facer blandit noluisse ad. Vel ei dicam option menandri. In sit tale affert explicari, quo et latine docendi. Has te habemus rationibus, id cum dicant dicunt oportere, et ius prodesset reprehendunt. Qui ut homero efficiantur, eu omnis solum fabellas sed, sit habeo legimus ea. Inermis intellegam eam te.",
+      "isActive": true
+    },
+    {
+      "id": 7,
+      "note": "Adhuc velit platonem eam cu. Cu alia aeque usu, qui ad tale graeco dissentiet, no ius unum deserunt nominati. Usu prima dictas percipit an. Diceret sapientem intellegam at ius, legere omittantur ea sed. Sit natum mucius vocibus ut, in voluptua pertinax nam.",
+      "isActive": true
+    },
+    {
+      "id": 8,
+      "note": "Eum ei ullum utinam. Vix dolor habemus laboramus id, liber ornatus nec te. Congue laoreet vis ad, vix augue alienum lobortis ex. Nec no oratio vocent similique, ex eos quaestio instructior definitionem, usu ex graecis civibus periculis. Cu vide minim referrentur sed, dico dicunt ei qui, et dolor oblique dolores vis. Quot ferri impetus eu sea, vim ea equidem ornatus.",
+      "isActive": true
+    },
+    {
+      "id": 9,
+      "note": "Iriure accusam eum et, iisque explicari an has, ius labores inciderint ne. Ad eligendi maiestatis sed. Eos alia voluptatum id, ex omnium iracundia efficiantur his, nonumy sententiae sed no. Nec in utroque qualisque voluptatibus, tota quodsi usu cu. Pertinax pertinacia eum no, nemore audire persecuti has cu. Dicta semper deleniti id pro. Quo ut vidit inciderint, quas noster detracto cum eu.",
+      "isActive": true
+    },
+    {
+      "id": 10,
+      "note": "Vim ne dolore conclusionemque. His eros quidam sapientem ex, eam munere suscipit vituperata et. Primis maluisset in sea, mei id nulla tempor hendrerit. Paulo dicant nostro pri ut, fugit conceptam signiferumque usu at. Tollit definitiones in vix, illud labitur quo ad. Ad qui prompta virtute delenit, ne reque dicant eam.",
+      "isActive": true
+    },
+    {
+      "id": 11,
+      "note": "Lorem ipsum dolor sit amet, nonumy eruditi vituperatoribus mei id, vix facer blandit noluisse ad. Vel ei dicam option menandri. In sit tale affert explicari, quo et latine docendi. Has te habemus rationibus, id cum dicant dicunt oportere, et ius prodesset reprehendunt. Qui ut homero efficiantur, eu omnis solum fabellas sed, sit habeo legimus ea. Inermis intellegam eam te.",
+      "isActive": true
+    },
+    {
+      "id": 12,
+      "note": "Adhuc velit platonem eam cu. Cu alia aeque usu, qui ad tale graeco dissentiet, no ius unum deserunt nominati. Usu prima dictas percipit an. Diceret sapientem intellegam at ius, legere omittantur ea sed. Sit natum mucius vocibus ut, in voluptua pertinax nam.",
+      "isActive": true
+    },
+    {
+      "id": 13,
+      "note": "Eum ei ullum utinam. Vix dolor habemus laboramus id, liber ornatus nec te. Congue laoreet vis ad, vix augue alienum lobortis ex. Nec no oratio vocent similique, ex eos quaestio instructior definitionem, usu ex graecis civibus periculis. Cu vide minim referrentur sed, dico dicunt ei qui, et dolor oblique dolores vis. Quot ferri impetus eu sea, vim ea equidem ornatus.",
+      "isActive": true
+    },
+    {
+      "id": 14,
+      "note": "Iriure accusam eum et, iisque explicari an has, ius labores inciderint ne. Ad eligendi maiestatis sed. Eos alia voluptatum id, ex omnium iracundia efficiantur his, nonumy sententiae sed no. Nec in utroque qualisque voluptatibus, tota quodsi usu cu. Pertinax pertinacia eum no, nemore audire persecuti has cu. Dicta semper deleniti id pro. Quo ut vidit inciderint, quas noster detracto cum eu.",
+      "isActive": true
+    },
+    {
+      "id": 16,
+      "note": "Vim ne dolore conclusionemque. His eros quidam sapientem ex, eam munere suscipit vituperata et. Primis maluisset in sea, mei id nulla tempor hendrerit. Paulo dicant nostro pri ut, fugit conceptam signiferumque usu at. Tollit definitiones in vix, illud labitur quo ad. Ad qui prompta virtute delenit, ne reque dicant eam.",
+      "isActive": true
+    },
+    {
+      "id": 17,
+      "note": "Lorem ipsum dolor sit amet, nonumy eruditi vituperatoribus mei id, vix facer blandit noluisse ad. Vel ei dicam option menandri. In sit tale affert explicari, quo et latine docendi. Has te habemus rationibus, id cum dicant dicunt oportere, et ius prodesset reprehendunt. Qui ut homero efficiantur, eu omnis solum fabellas sed, sit habeo legimus ea. Inermis intellegam eam te.",
+      "isActive": true
+    },
+    {
+      "id": 18,
+      "note": "Adhuc velit platonem eam cu. Cu alia aeque usu, qui ad tale graeco dissentiet, no ius unum deserunt nominati. Usu prima dictas percipit an. Diceret sapientem intellegam at ius, legere omittantur ea sed. Sit natum mucius vocibus ut, in voluptua pertinax nam.",
+      "isActive": true
+    },
+    {
+      "id": 19,
+      "note": "Eum ei ullum utinam. Vix dolor habemus laboramus id, liber ornatus nec te. Congue laoreet vis ad, vix augue alienum lobortis ex. Nec no oratio vocent similique, ex eos quaestio instructior definitionem, usu ex graecis civibus periculis. Cu vide minim referrentur sed, dico dicunt ei qui, et dolor oblique dolores vis. Quot ferri impetus eu sea, vim ea equidem ornatus.",
+      "isActive": true
+    },
+    {
+      "id": 20,
+      "note": "Iriure accusam eum et, iisque explicari an has, ius labores inciderint ne. Ad eligendi maiestatis sed. Eos alia voluptatum id, ex omnium iracundia efficiantur his, nonumy sententiae sed no. Nec in utroque qualisque voluptatibus, tota quodsi usu cu. Pertinax pertinacia eum no, nemore audire persecuti has cu. Dicta semper deleniti id pro. Quo ut vidit inciderint, quas noster detracto cum eu.",
+      "isActive": true
+    },
+    {
+      "id": 21,
+      "note": "Vim ne dolore conclusionemque. His eros quidam sapientem ex, eam munere suscipit vituperata et. Primis maluisset in sea, mei id nulla tempor hendrerit. Paulo dicant nostro pri ut, fugit conceptam signiferumque usu at. Tollit definitiones in vix, illud labitur quo ad. Ad qui prompta virtute delenit, ne reque dicant eam.",
+      "isActive": false
+    },
+    {
+      "id": 22,
+      "note": "Lorem ipsum dolor sit amet, nonumy eruditi vituperatoribus mei id, vix facer blandit noluisse ad. Vel ei dicam option menandri. In sit tale affert explicari, quo et latine docendi. Has te habemus rationibus, id cum dicant dicunt oportere, et ius prodesset reprehendunt. Qui ut homero efficiantur, eu omnis solum fabellas sed, sit habeo legimus ea. Inermis intellegam eam te.",
+      "isActive": false
+    },
+    {
+      "id": 23,
+      "note": "Adhuc velit platonem eam cu. Cu alia aeque usu, qui ad tale graeco dissentiet, no ius unum deserunt nominati. Usu prima dictas percipit an. Diceret sapientem intellegam at ius, legere omittantur ea sed. Sit natum mucius vocibus ut, in voluptua pertinax nam.",
+      "isActive": false
+    },
+    {
+      "id": 24,
+      "note": "Eum ei ullum utinam. Vix dolor habemus laboramus id, liber ornatus nec te. Congue laoreet vis ad, vix augue alienum lobortis ex. Nec no oratio vocent similique, ex eos quaestio instructior definitionem, usu ex graecis civibus periculis. Cu vide minim referrentur sed, dico dicunt ei qui, et dolor oblique dolores vis. Quot ferri impetus eu sea, vim ea equidem ornatus.",
+      "isActive": false
+    },
+    {
+      "id": 25,
+      "note": "Iriure accusam eum et, iisque explicari an has, ius labores inciderint ne. Ad eligendi maiestatis sed. Eos alia voluptatum id, ex omnium iracundia efficiantur his, nonumy sententiae sed no. Nec in utroque qualisque voluptatibus, tota quodsi usu cu. Pertinax pertinacia eum no, nemore audire persecuti has cu. Dicta semper deleniti id pro. Quo ut vidit inciderint, quas noster detracto cum eu.",
+      "isActive": false
+    },
+    {
+      "id": 26,
+      "note": "Vim ne dolore conclusionemque. His eros quidam sapientem ex, eam munere suscipit vituperata et. Primis maluisset in sea, mei id nulla tempor hendrerit. Paulo dicant nostro pri ut, fugit conceptam signiferumque usu at. Tollit definitiones in vix, illud labitur quo ad. Ad qui prompta virtute delenit, ne reque dicant eam.",
+      "isActive": false
+    },
+    {
+      "id": 27,
+      "note": "Lorem ipsum dolor sit amet, nonumy eruditi vituperatoribus mei id, vix facer blandit noluisse ad. Vel ei dicam option menandri. In sit tale affert explicari, quo et latine docendi. Has te habemus rationibus, id cum dicant dicunt oportere, et ius prodesset reprehendunt. Qui ut homero efficiantur, eu omnis solum fabellas sed, sit habeo legimus ea. Inermis intellegam eam te.",
+      "isActive": false
+    },
+    {
+      "id": 28,
+      "note": "Adhuc velit platonem eam cu. Cu alia aeque usu, qui ad tale graeco dissentiet, no ius unum deserunt nominati. Usu prima dictas percipit an. Diceret sapientem intellegam at ius, legere omittantur ea sed. Sit natum mucius vocibus ut, in voluptua pertinax nam.",
+      "isActive": false
+    },
+    {
+      "id": 29,
+      "note": "Eum ei ullum utinam. Vix dolor habemus laboramus id, liber ornatus nec te. Congue laoreet vis ad, vix augue alienum lobortis ex. Nec no oratio vocent similique, ex eos quaestio instructior definitionem, usu ex graecis civibus periculis. Cu vide minim referrentur sed, dico dicunt ei qui, et dolor oblique dolores vis. Quot ferri impetus eu sea, vim ea equidem ornatus.",
+      "isActive": false
+    },
+    {
+      "id": 31,
+      "note": "Iriure accusam eum et, iisque explicari an has, ius labores inciderint ne. Ad eligendi maiestatis sed. Eos alia voluptatum id, ex omnium iracundia efficiantur his, nonumy sententiae sed no. Nec in utroque qualisque voluptatibus, tota quodsi usu cu. Pertinax pertinacia eum no, nemore audire persecuti has cu. Dicta semper deleniti id pro. Quo ut vidit inciderint, quas noster detracto cum eu.",
+      "isActive": false
+    },
+    {
+      "id": 32,
+      "note": "Vim ne dolore conclusionemque. His eros quidam sapientem ex, eam munere suscipit vituperata et. Primis maluisset in sea, mei id nulla tempor hendrerit. Paulo dicant nostro pri ut, fugit conceptam signiferumque usu at. Tollit definitiones in vix, illud labitur quo ad. Ad qui prompta virtute delenit, ne reque dicant eam.",
+      "isActive": false
+    },
+    {
+      "id": 33,
+      "note": "Lorem ipsum dolor sit amet, nonumy eruditi vituperatoribus mei id, vix facer blandit noluisse ad. Vel ei dicam option menandri. In sit tale affert explicari, quo et latine docendi. Has te habemus rationibus, id cum dicant dicunt oportere, et ius prodesset reprehendunt. Qui ut homero efficiantur, eu omnis solum fabellas sed, sit habeo legimus ea. Inermis intellegam eam te.",
+      "isActive": false
+    },
+    {
+      "id": 34,
+      "note": "Adhuc velit platonem eam cu. Cu alia aeque usu, qui ad tale graeco dissentiet, no ius unum deserunt nominati. Usu prima dictas percipit an. Diceret sapientem intellegam at ius, legere omittantur ea sed. Sit natum mucius vocibus ut, in voluptua pertinax nam.",
+      "isActive": false
+    },
+    {
+      "id": 35,
+      "note": "Eum ei ullum utinam. Vix dolor habemus laboramus id, liber ornatus nec te. Congue laoreet vis ad, vix augue alienum lobortis ex. Nec no oratio vocent similique, ex eos quaestio instructior definitionem, usu ex graecis civibus periculis. Cu vide minim referrentur sed, dico dicunt ei qui, et dolor oblique dolores vis. Quot ferri impetus eu sea, vim ea equidem ornatus.",
+      "isActive": false
+    },
+    {
+      "id": 36,
+      "note": "Iriure accusam eum et, iisque explicari an has, ius labores inciderint ne. Ad eligendi maiestatis sed. Eos alia voluptatum id, ex omnium iracundia efficiantur his, nonumy sententiae sed no. Nec in utroque qualisque voluptatibus, tota quodsi usu cu. Pertinax pertinacia eum no, nemore audire persecuti has cu. Dicta semper deleniti id pro. Quo ut vidit inciderint, quas noster detracto cum eu.",
+      "isActive": false
+    },
+    {
+      "id": 37,
+      "note": "Vim ne dolore conclusionemque. His eros quidam sapientem ex, eam munere suscipit vituperata et. Primis maluisset in sea, mei id nulla tempor hendrerit. Paulo dicant nostro pri ut, fugit conceptam signiferumque usu at. Tollit definitiones in vix, illud labitur quo ad. Ad qui prompta virtute delenit, ne reque dicant eam.",
+      "isActive": false
+    },
+    {
+      "id": 38,
+      "note": "Lorem ipsum dolor sit amet, nonumy eruditi vituperatoribus mei id, vix facer blandit noluisse ad. Vel ei dicam option menandri. In sit tale affert explicari, quo et latine docendi. Has te habemus rationibus, id cum dicant dicunt oportere, et ius prodesset reprehendunt. Qui ut homero efficiantur, eu omnis solum fabellas sed, sit habeo legimus ea. Inermis intellegam eam te.",
+      "isActive": false
+    },
+    {
+      "id": 39,
+      "note": "Adhuc velit platonem eam cu. Cu alia aeque usu, qui ad tale graeco dissentiet, no ius unum deserunt nominati. Usu prima dictas percipit an. Diceret sapientem intellegam at ius, legere omittantur ea sed. Sit natum mucius vocibus ut, in voluptua pertinax nam.",
+      "isActive": false
+    },
+    {
+      "id": 40,
+      "note": "Eum ei ullum utinam. Vix dolor habemus laboramus id, liber ornatus nec te. Congue laoreet vis ad, vix augue alienum lobortis ex. Nec no oratio vocent similique, ex eos quaestio instructior definitionem, usu ex graecis civibus periculis. Cu vide minim referrentur sed, dico dicunt ei qui, et dolor oblique dolores vis. Quot ferri impetus eu sea, vim ea equidem ornatus.",
+      "isActive": false
+    },
+    {
+      "id": 41,
+      "note": "Iriure accusam eum et, iisque explicari an has, ius labores inciderint ne. Ad eligendi maiestatis sed. Eos alia voluptatum id, ex omnium iracundia efficiantur his, nonumy sententiae sed no. Nec in utroque qualisque voluptatibus, tota quodsi usu cu. Pertinax pertinacia eum no, nemore audire persecuti has cu. Dicta semper deleniti id pro. Quo ut vidit inciderint, quas noster detracto cum eu.",
+      "isActive": false
+    },
+    {
+      "id": 42,
+      "note": "Vim ne dolore conclusionemque. His eros quidam sapientem ex, eam munere suscipit vituperata et. Primis maluisset in sea, mei id nulla tempor hendrerit. Paulo dicant nostro pri ut, fugit conceptam signiferumque usu at. Tollit definitiones in vix, illud labitur quo ad. Ad qui prompta virtute delenit, ne reque dicant eam.",
+      "isActive": false
+    }
+  ]
+}

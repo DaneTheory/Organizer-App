@@ -1,0 +1,21 @@
+/* ======================
+      HELPER CLASSES
+========================= */
+
+// When Lights Are On
+.lightsOn {
+	background: #3F3F3F;
+	color: $white;
+	animation-duration: 1.25s;
+	animation-name: lightsOn--anim;
+	animation-fill-mode: alternate-reverse;
+}
+
+// When Lights Are Off
+.lightsOff {
+	background: $white;
+	color: #3F3F3F;
+	animation-duration: 1.25s;
+	animation-name: lightsOff--anim;
+	animation-fill-mode: alternate-reverse;
+}

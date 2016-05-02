@@ -1,0 +1,91 @@
+/* =================================
+       LIST SPECIFFIC STYLES
+==================================== */
+
+.list--info {
+	font-size: 1.25em;
+	text-transform: capitalize;
+	text-align: left;
+	position: relative;
+	width: 95%;
+	margin: auto auto;
+
+	span:nth-child(1) {
+			font-size: 1.25em;
+			display: inline-block;
+			font-weight: bold;
+			border-bottom: 2px solid $addBttnMain;
+			border-left: 2px solid $addBttnMain;
+			padding-left: 3px;
+			padding-bottom: 1px;
+			color: $delBttnMain;
+	}
+}
+
+.data-list {
+	display: block;
+	overflow: auto;
+	position: absolute;
+	max-height: 13.15em;
+	width: 100%;
+	margin: auto auto;
+
+	@media (min-width: 320px) and (max-width: 960px) {
+		margin: 3em auto;
+	}
+
+		&::-webkit-scrollbar {
+			-webkit-appearance: none;
+			width: 5px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			border-radius: 1px;
+			background-color: rgba(0,0,0,.2);
+			-webkit-box-shadow: 0 0 2px rgba(255,255,255,.5);
+		}
+
+		.data-list-item {
+		    display: block;
+		    text-align: right;
+				margin: 0.85em auto;
+				border-bottom: 2px solid #ffe3df;
+
+				.details {
+						display: inline-block;
+						vertical-align: middle;
+						width: 80%;
+						text-align: left;
+						font-size: 1.3em;
+
+						@media (min-width: 320px) and (max-width: 960px) {
+							font-size: 1em;
+							width: 95%;
+						}
+
+				}
+
+				.btn--delete {
+					display: inline-block;
+				}
+		}
+	}
+
+	form.meetingsForm, form.quotesForm, form.salesForm {
+		display: flex;
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		@media (min-width: 320px) and (max-width: 960px) {
+    	top: 2.5em;
+		}
+
+		input#meetingInput, input#quoteInput, input#saleInput {
+    	text-align: center;
+
+			@media (min-width: 320px) and (max-width: 960px) {
+				font-size: 0.75em;
+			}
+		}
+}

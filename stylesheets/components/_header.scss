@@ -1,0 +1,91 @@
+/* =================================
+    HEADER REGION COMPONENT STYLES
+================================= */
+
+.primary-header {
+    display: block;
+		border-bottom: 2px solid $txtAreaMainColor;
+		margin-bottom: 2.25em;
+
+		.lists--container {
+    	display: inline-block;
+    	width: 65%;
+    	text-align: center;
+    	text-transform: uppercase;
+    	vertical-align: top;
+    	position: relative;
+
+			@media (min-width: 320px) and (max-width: 960px) {
+				width: 80%;
+		    display: block;
+		    overflow: hidden;
+		    height: 30vh;
+		    margin: auto auto;
+			}
+
+			.home-page {
+				font-size: 2.85em;
+				display: inline-block;
+				width: 70vw;
+				text-align: center;
+				text-transform: uppercase;
+				vertical-align: bottom;
+				text-shadow: 0px -1px 3px $textAreaLabel;
+				opacity: 0.7;
+				cursor: pointer;
+
+				@media (min-width: 320px) and (max-width: 960px) {
+					font-size: 1.5em;
+				}
+
+				h1 {
+					margin: 0.75em auto;
+				}
+			}
+		}
+
+		.lists--options {
+		    display: inline-block;
+		    width: 20vw;
+				border-right: 2px solid $txtAreaMainColor;
+				margin: 0.5em auto;
+
+				@media (min-width: 320px) and (max-width: 960px) {
+					width: 100vw;
+				}
+
+				ul {
+						margin: 1.2em auto;
+				    padding: 0;
+				    position: relative;
+				    width: 85%;
+				    list-style-type: none;
+
+						@media (min-width: 320px) and (max-width: 960px) {
+							width: 50%;
+						}
+
+						li {
+						    text-align: center;
+								background: $textAreaLabel;
+								border: 2px solid $textAreaLabelBG;
+								width: 100%;
+								cursor: pointer;
+								transition: all 0.4s ease;
+								z-index: 10;
+								border-radius: 2px;
+							  margin: 0.25em auto;
+
+								a {
+									color: $white;
+									text-decoration: none;
+									text-transform: uppercase;
+									font-size: 1.15em;
+							    display: block;
+							    padding-top: 0.5em;
+							    padding-bottom: 0.5em;
+								}
+						}
+				}
+		}
+}

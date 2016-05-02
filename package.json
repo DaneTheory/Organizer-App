@@ -6,7 +6,7 @@
     "dev": "gulp",
     "build": "webpack --config ./webpack.prod.config.js --progress --colors",
     "server": "json-server --watch ./data/db.json --port 3001",
-    "start": "npm run server & node ./app.js"
+    "start": "node ./app.js"
   },
   "author": "Branden Dane <danetheory@gmail.com>",
   "license": "ISC",

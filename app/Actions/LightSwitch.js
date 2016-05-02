@@ -1,7 +1,7 @@
 /* ===================================================
                 LIGHT SWITCH ACTIONS
 ====================================================== */
-import * as types from '../Constants/ActionTypes';
+import * as types  from '../Constants/ActionTypes'
 
 
 // ON SUCCESSFUL AJAX RETURN, TOGGLE LOCAL STATE

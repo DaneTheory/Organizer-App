@@ -1,0 +1,21 @@
+/* ======================
+      ANIMATIONS
+========================= */
+
+// Lights On Animation
+@keyframes lightsOn--anim {
+  from {
+    background: $white;
+    color: #3F3F3F;
+  }
+
+}
+
+// Lights Off Animation
+@keyframes lightsOff--anim {
+  from {
+		background: #3F3F3F;
+		color: $white;
+  }
+
+}

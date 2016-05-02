@@ -1,0 +1,18 @@
+/* =================================
+    PAGE STYLES
+================================= */
+
+// Home Page
+.home {
+	text-align: center;
+	background: #6aa1ae;
+	border: 2px solid #d0e7ed;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	z-index: 10;
+	padding: 0.5em 0.5em;
+	color: $white;
+	text-decoration: none;
+	display: inline-block;
+  vertical-align: bottom;
+}

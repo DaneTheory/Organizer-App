@@ -13,6 +13,9 @@ This App shows off a few cool concepts:
 ### A personal note:
 This is engineering overkill, but what it shows off it shows off well. It makes more sense to keep relevant remote data seperate. The Lights button would make more sense in a production build to act on a local client state, not wait for a JSON response. Also, I used my own custom boilerplate to create this build. It needs improvement. Nuff' said.
 
+## Incase things get wonky after installing when trying to run gulp:
+The proxy setup for the browser sync setup needs an overhaul. If you don't see the page load after running gulp, try refreshing the browser. All should be well again.
+
 ## Instructions:
 <ul>
   <li>Download Repo</li>

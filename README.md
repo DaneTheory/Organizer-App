@@ -16,7 +16,9 @@ This is engineering overkill, but what it shows off it shows off well. It makes 
 ## Instructions:
 <ul>
   <li>Download Repo</li>
-  <li>Run: <code>npm install</code></li>
+  <li><code>cd</code> into the downloaded directory</li>
+  <li>Run: <code>npm i</code></li>
+  <li>Allow installation finish</li>
   <li>Run: <code>gulp</code></li>
 </ul>
 
